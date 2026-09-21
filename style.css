@@ -1,0 +1,97 @@
+/* css : cascading style sheet */
+
+ h1{
+    font-size: 100px;
+    color: blue;
+    background-color: rgb(151, 178, 189);
+    font-family: gilroy;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+ }
+ h3{
+    color: brown;
+    background-color: lightyellow;
+ }
+
+ div{
+    height: 300px;
+    width: 300px;
+    color: green;
+    background-color: black;
+ }
+
+ #ok{
+    background-color: aqua;
+ }
+ .ha{
+    background-color: lightgreen;
+ }
+
+ body{
+    height: 100%;
+    width: 100%;
+ }
+
+ #box1{
+    height: 150px;
+    width: 150px;
+    background-color: crimson;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-right: 50px;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-top: 30px; */
+ }
+
+ #box2{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    /* margin-left: 50px;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-top: 30px; */
+ }
+
+ button{
+    margin: 40px;
+    font-size: 20px;
+    padding: 15px 30 px;
+    color: black;
+    background-color: transparent;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 10px;
+ }
+ button:hover{
+    background-color: black;
+    color: white;
+ }
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+ .child{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 3px solid #fff;
+    background-image: url(https://harekrishnamandir.org/uploads/blog/post_image8874354.webp);
+    background-size: cover;
+    background-position: center;
+ }
+#child2{
+    background-image: url(https://roadtodivinity.wordpress.com/wp-content/uploads/2014/08/lord-krishna-birth.jpg);
+ }
