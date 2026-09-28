@@ -140,6 +140,15 @@ obj.greet = function(){
 }
 obj.greet(); // output Hello krishna
 
+let obj1 = {
+    name: "krishna",
+    age: 20,
+}
+obj.name = "Sharma";
+console.log(obj.name); // output Sharma 
+delete obj.age; // delete property
+console.log(obj.age); // output undefined
+
 // classes
 class Person{
     constructor(name, age){
@@ -153,3 +162,60 @@ class Person{
 
 let person1 = new Person("krishna", 20);
 person1.greet(); // output Hello krishna
+
+
+// map
+const map1 = new Map([
+    ['id', 1], // key: id    value: 1
+    ['name', alice],
+    ['age', 20],
+])
+
+map.size(); //2
+map.get('id')    //1
+map.has('id');  //true
+map.has('none')  //false
+map.delete('age');
+
+map.clear();   // clear the map and size become 0
+
+const map = new Map()
+map.set('name', 'bob').set('age', 20)
+for(const[key, value] of map){
+    console.log('${key}: ${value}')
+}
+//name: bob
+//age: 20
+
+
+//string
+let str1= "hello ";
+let str2= "world!";
+let result= str1.concat(str2);
+console.log(result);   //Output: hello world!
+let char = result.charAt(4);   //o 
+let index1= result.indexOf("world");  // 6
+let slicestr=result.slice(6,11);   // world!
+let newstr= result.replace("world", "universe");
+let tolower= result.toLowerCase()
+
+
+// Error Handling
+
+try{  // code that may throw an error
+    let x = y;    // y is not defined so the error is thrown
+}
+catch(error){       // code to handle the error
+    console.log(error.message);   //output: y is not defined
+}
+finally{    //code to be executed regardless from an error
+    console.log("hahahaha")
+}
+
+
+function divide(a,b){
+    if(b==0){
+        throw new Error("Division by 0 is not allowed");
+    }
+    return a/b;
+}
